@@ -44,7 +44,7 @@ FROM dept_manager_info;
 -- employee number, last name, first name, and department name.
 
 CREATE VIEW employee_info AS
-SELECT e.emp_no, e.last_name, e.first_name,demp.dept_no,d.dept_name
+SELECT e.emp_no, e.last_name, e.first_name,d.dept_name
 FROM employees  AS e JOIN dept_emp AS demp
 ON e.emp_no = demp.emp_no
 JOIN departments  AS d
